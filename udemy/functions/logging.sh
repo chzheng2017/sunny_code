@@ -1,6 +1,7 @@
 #!/bin/bash
 log() {
   # This function sends a message to syslog and to standard output if VERBOSE is true.
+  # By default, all variables are global scope unless you put local in front
   local MESSAGE="${@}"
   if [[ "${VERBOSE}" = 'true' ]]
   then 
