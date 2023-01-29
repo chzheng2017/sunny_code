@@ -5,6 +5,7 @@
 # You can also provide a comment for the account as an argument, it's optional
 # The password will be automatically generated
 # The username, password, and host for the account will be displayed.
+# ./add-new-local-user.sh emmal Emma Lee
 
 # Make sure the script is being executed with superuser privileges.
 if [[ "${UID}" -ne 0 ]]
