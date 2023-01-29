@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# Demonstrate the use of shift and while loops
+
+# Display the first three parameters
+echo "Parameter 1: ${1}"
+echo "Parameter 2: ${2}"
+echo "Parameter 3: ${3}"
+echo
+
+# Loop through all the posistional parameters
+while [[ "${#}" -gt 0 ]]
+do
+  echo "Number of parameters: ${#}"
+  echo "Parameter 1: ${1}"
+  echo "Parameter 2: ${2}"
+  echo "Parameter 3: ${3}"
+  echo
+  shift
+done
+
+#####
+#root@ubuntu2004:~# ./shift_while_loop.sh a b c d
+#Parameter 1: a
+#Parameter 2: b
+#Parameter 3: c
+
+#Number of parameters: 4
+#Parameter 1: a
+#Parameter 2: b
+#Parameter 3: c
+
+#Number of parameters: 3
+#Parameter 1: b
+#Parameter 2: c
+#Parameter 3: d
+
+#Number of parameters: 2
+#Parameter 1: c
+#Parameter 2: d
+#Parameter 3:
+
+#Number of parameters: 1
+#Parameter 1: d
+#Parameter 2:
+#Parameter 3:
