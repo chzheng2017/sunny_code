@@ -1,0 +1,26 @@
+{
+    "vegetable_list": [
+        "bachoy",
+        "daikon",
+        "shiitake mushrooms",
+        "enoki mushrooms",
+        "okra",
+        "snow peas",
+        "daikon",
+        "chinese cabbage",
+        "round cabbage",
+        "lotus root"
+    ],
+    "sauce_list": [
+        "curry chicken paste", 
+        "coconut milk",
+        "curry beef sauce", 
+        "oyster sauce", 
+        "seasome oil"
+    ],
+    "dry_list": [
+        "Xinzhu flour noodle",
+        "tofu",
+        "dumpling wraps"
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "vegetable_list": [
+        "zucchini",
+        "squash",
+        "broccoli",
+        "bella mushroom",
+        "romaine heart",
+        "string beans",
+        "lettuce",
+        "potatoes",
+        "cherry tomatoes",
+        "cauliflower",
+        "carrot",
+        "tomatoes",
+        "avocado",
+        "cucumber",
+        "onion",
+        "green onions",
+        "garlic",
+        "ginger"
+    ],
+    "fruit_list": [
+        "bananas",
+        "watermelon",
+        "berries",
+        "apples",
+        "Honey dew"
+    ],
+    "meat_list": [
+        "ground pork",
+        "rib",
+        "drum sticks",
+        "chicken breast",
+        "ground beef",
+        "Italian sausage",
+        "salmon",
+        "shrimp"
+    ],
+    "dairy_list": [
+        "ricotta cheese",
+        "parmesan cheese",
+        "sandwich cheese slices",
+        "butter",
+        "greek yogurt",
+        "breakfast yogurt",
+        "heavy cream",
+        "milk",
+        "eggs"
+    ],
+    "bread_list": [
+        "Turano bread",
+        "tortilla wrap"
+    ],
+    "sauce": [
+        "peanut butter",
+        "salt",
+        "black pepper",
+        "cumin",
+        "beer"
+    ],
+    "frozen item": [
+        "hashbrown",
+        "frozen corn",
+        "frozen pea",
+        "pie crust"
+    ],
+     "noodles": [
+        "flour",
+        "fast noodle",
+        "pasta",
+        "rottini"
+    ],
+     "drinks": [
+        "water",
+        "juice"
+    ],
+     "household supplies": [
+        "women's pad",
+        "kitchen cleaner"
+    ]
+
+}

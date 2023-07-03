@@ -1,0 +1,47 @@
+{
+    "vegetable_list": [
+        "mixed greens",
+        "spinach",
+        "bella mushrooms",
+        "asparagus"
+    ],
+    "fruit_list": [
+        "bananas",
+        "watermelon",
+        "berries",
+        "apples"
+    ],
+    "meat_list": [
+        "Rotisserie chicken",
+        "rib",
+        "chicken wing",
+        "chicken breast",
+        "chicken thigh",
+        "beef brisket",
+        "pork belly",
+        "hotpot beef",
+        "cod",
+        "round sausage",
+        "turky bacon",
+        "pork bacon",
+        "smoke salmon"
+    ],
+    "dairy_list": [
+        "Mozzarella cheese",
+        "sandwich cheese slices",
+        "eggs",
+        "milk"
+    ],
+    "bread_list": [
+        "oatmeal bread",
+        "multi-grain bread",
+        "sandwich buns"
+    ],
+    "sauce&oil_list": [
+        "soy sauce",
+        "olive oil"
+    ],
+    "snack": [
+        "fruit bar"
+    ]
+}
