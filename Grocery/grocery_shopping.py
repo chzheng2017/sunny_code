@@ -1,5 +1,18 @@
 import json
 
+def print_saved_items(store_name, shopping_list):
+    print(f"\nCurrent saved items for {store_name}:")
+    store_items = [item for item in shopping_list if item[0] == store_name]
+
+    if len(store_items) == 0:
+        print("No items saved for this store.")
+    else:
+        store_list = []
+        for _, list_name, item in store_items:
+            if item not in store_list:
+                store_list.append(item)
+                print(f"- {item} ({list_name})")
+
 def generate_shopping_list(store_name, store_data):
     print(f"\nGenerating shopping list for {store_name}...")
     selected_items = []
@@ -60,7 +73,7 @@ def generate_shopping_list(store_name, store_data):
     return selected_items
 
 
-def grocery_shopping():
+def grocery_shopping(selected_items):
     with open("aldi.json") as file:
         aldi_data = json.load(file)
 
@@ -114,10 +127,17 @@ def load_shopping_list():
     except FileNotFoundError:
         return []
 
-
 def main():
     selected_items = load_shopping_list()
-    selected_items.extend(grocery_shopping())
+
+    # Ask if the user wants to check the currently saved items
+    check_saved_items = input("Would you like to check the currently saved items? (yes/no): ")
+
+    if check_saved_items.lower() == "yes":
+        store_name = input("Which store's items do you want to check? ")
+        print_saved_items(store_name, selected_items)
+
+    selected_items.extend(grocery_shopping(selected_items))
     save_shopping_list(selected_items)
 
     print("\nReady to go shopping?")
@@ -125,20 +145,7 @@ def main():
 
     if ready.lower() == "yes":
         store_name = input("Which store are you going to? ")
-        print(f"\nFinal shopping list for {store_name}:")
-        store_items = [item for item in selected_items if item[0] == store_name]
-
-        if len(store_items) == 0:
-            print("No items to buy from this store.")
-        else:
-            store_list = []
-            for _, list_name, item in store_items:
-                if item not in store_list:
-                    store_list.append(item)
-                    print(f"- {item} ({list_name})")
-
-            selected_items = [item for item in selected_items if item not in store_items]
-            save_shopping_list(selected_items)
+        print_saved_items(store_name, selected_items)
 
         print("Thank you for using the grocery shopping app!")
 
